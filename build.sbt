@@ -21,7 +21,6 @@ given Patterns = Resolver.ivyStylePatterns
 
 resolvers ++= Seq(
   Resolver.typesafeRepo("releases"),
-  Resolver.typesafeIvyRepo("releases"),
   "hmrc-releases" at "https://artefacts.tax.service.gov.uk/artifactory/hmrc-releases/",
   "third-party-maven-releases" at "https://artefacts.tax.service.gov.uk/artifactory/third-party-maven-releases/",
   Resolver.uri("third-party-ivy-releases", java.net.URI("https://artefacts.tax.service.gov.uk/artifactory/third-party-ivy-releases")),
