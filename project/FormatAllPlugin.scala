@@ -11,7 +11,7 @@ import scoverage.ScoverageSbtPlugin
   *
   * @author Yuriy Tumakha
   */
-object FormatAllPlugin extends AutoPlugin {
+object FormatAllPlugin extends AutoPlugin:
 
   override def requires: Plugins = ScalafmtPlugin && ScalafixPlugin && ScoverageSbtPlugin
 
@@ -44,5 +44,3 @@ object FormatAllPlugin extends AutoPlugin {
   private def scalafixSettings: Seq[Setting[?]] = Seq(
     semanticdbEnabled := true
   )
-
-}

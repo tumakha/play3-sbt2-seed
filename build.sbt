@@ -30,4 +30,4 @@ resolvers ++= Seq(
 )
 
 addCommandAlias("precommit", "clean;coverage;test;coverageOff;coverageReport;package")
-addCommandAlias("testCoverage", "clean;coverage;test;coverageOff;coverageReport;coverageAggregate;package")
+addCommandAlias("testCoverage", "clean;coverage;test;coverageOff;coverageReport;package")

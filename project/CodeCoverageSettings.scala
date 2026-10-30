@@ -1,7 +1,7 @@
 import sbt.{AutoPlugin, Setting}
 import scoverage.ScoverageKeys
 
-object CodeCoverageSettings extends AutoPlugin {
+object CodeCoverageSettings extends AutoPlugin:
 
   override def trigger = allRequirements
 
@@ -16,5 +16,3 @@ object CodeCoverageSettings extends AutoPlugin {
     ScoverageKeys.coverageFailOnMinimum := true,
     ScoverageKeys.coverageHighlighting := true
   )
-
-}

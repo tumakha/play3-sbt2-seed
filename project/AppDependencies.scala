@@ -2,7 +2,7 @@ import play.core.PlayVersion
 import play.sbt.PlayImport.{guice, ws}
 import sbt.*
 
-object AppDependencies {
+object AppDependencies:
 
   private val catsEffectVersion         = "3.7.1"
   private val apachePOIVersion          = "6.0.0"
@@ -14,7 +14,6 @@ object AppDependencies {
   private val bootstrapVersion          = "10.8.0"
   private val playFrontendVersion       = "13.16.0"
   private val mongoVersion              = "2.14.0"
-  private val playLanguageVersion       = "10.0.0"
   private val cryptoJsonVersion         = "8.4.0"
 
   // Test dependencies
@@ -40,7 +39,6 @@ object AppDependencies {
     "uk.gov.hmrc"                  %% "bootstrap-frontend-play-30" % bootstrapVersion,
     "uk.gov.hmrc"                  %% "play-frontend-hmrc-play-30" % playFrontendVersion,
     "uk.gov.hmrc.mongo"            %% "hmrc-mongo-play-30"         % mongoVersion,
-    "uk.gov.hmrc"                  %% "play-language-play-30"      % playLanguageVersion,
     "uk.gov.hmrc"                  %% "crypto-json-play-30"        % cryptoJsonVersion
   )
 
@@ -56,5 +54,3 @@ object AppDependencies {
   )
 
   val appDependencies: Seq[ModuleID] = compileDependencies ++ testDependencies
-
-}
