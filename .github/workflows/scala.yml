@@ -39,5 +39,7 @@ jobs:
           build.sbt
           project/build.properties
     - uses: sbt/setup-sbt@v1
+      with:
+        disk-cache: false
     - name: Run tests
       run: sbt testCoverage
